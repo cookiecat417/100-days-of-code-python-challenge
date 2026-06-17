@@ -1,23 +1,13 @@
-# Subscripting
-print("Hello"[0])
+print("Welcome to the tip calculator!")
+bill = float(input("What was the total bill? $"))
+tip = int(input("How much tip would you like to give? 10, 12, or 15? "))
+person = int(input("How many people to split the bill? "))
 
+tip_as_percent = tip / 100
+total_tip_amount = bill * tip_as_percent
+total_bill = bill + total_tip_amount
+bill_per_person = total_bill / person
+final_amount = round(bill_per_person, 2)
 
-# String
-print("123" + "345")
+print(f"Each person hould pay: ${final_amount}")
 
-
-# Integer = Whole Number
-print(123 + 345)
-
-
-# Large Integers
-print(123_456_789)
-
-
-# Float = Floating Point Number
-print(3.14159)
-
-
-# Boolean 
-print(True) 
-print(False)
