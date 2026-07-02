@@ -1,13 +1,78 @@
-print("Welcome to the tip calculator!")
-bill = float(input("What was the total bill? $"))
-tip = int(input("How much tip would you like to give? 10, 12, or 15? "))
-person = int(input("How many people to split the bill? "))
+print("Welcome to Builder Brothers Pizza!")
 
-tip_as_percent = tip / 100
-total_tip_amount = bill * tip_as_percent
-total_bill = bill + total_tip_amount
-bill_per_person = total_bill / person
-final_amount = round(bill_per_person, 2)
+answer = input("Hello there! Would you like to order a pizza? Y or N: ")
+    
+if answer == "Yes":
+    size = input("Which pie would you like to order? S, M, or L: ")
+    if size == "Small":
+        bill = 15
+        print(bill)
 
-print(f"Each person hould pay: ${final_amount}")
+    elif size == "Medium":
+        bill = 20
+        print(bill)
+
+    elif size == "Large":
+        bill = 25
+        print(bill)
+    
+    else:
+        print("ORDER. NOW.")
+
+    pepperoni = input("Would you like any pepperonis on your pizza? Y or N: ")
+    if pepperoni == "Yes":
+        if size == "Small":
+            bill += 2
+    
+
+    if pepperoni == "Yes":
+        if size == "Medium":
+            bill += 3
+    
+    
+    if pepperoni == "Yes":
+        if size == "Large":
+            bill += 3
+    
+    print(bill)
+
+    cheese = input("Would you like to add any cheese on your pizza? Y or N: ")
+    if cheese == "Yes":
+            bill += 1
+    print(bill)
+
+ 
+    print(f"Your total is ${bill}.")
+else: 
+    print("Yup, you're banned.")
+
+
+
+
+
+
+# bill = 0
+# if (size) == "Small":
+#     bill += 15
+# elif size == "Medium":
+#     bill += 20
+# elif size == "Large":
+#     bill += 25
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    
 
